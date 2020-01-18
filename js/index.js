@@ -81,7 +81,18 @@ topNav[5].textContent = siteContent["nav"]["nav-item-6"]
  mainContent[3].textContent = siteContent["main-content"]['product-content']
  mainContent[4].textContent = siteContent["main-content"]['vision-content']
 
+// contact header 
+let contactHeader = document.querySelector('.contact h4')
+console.log('contact header' , contactHeader)
 
+contactHeader.textContent = siteContent['contact']['contact-h4']
+
+let contactContent = document.querySelectorAll('.contact p')
+console.log('contact content' , contactContent)
+
+contactContent[0].textContent = siteContent["contact"]['address']
+contactContent[1].textContent = siteContent['contact']['phone']
+contactContent[2].textContent = siteContent["contact"]['email']
 
 
 

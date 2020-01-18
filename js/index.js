@@ -50,12 +50,12 @@ topContent.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 let topNav = document.querySelectorAll("a")
 console.log('nav', topNav)
 
-topNav[0].textContent = "Services"
-topNav[1].textContent = "Product"
-topNav[2].textContent = "Vision"
-topNav[3].textContent = "Features"
-topNav[4].textContent = "About"
-topNav[5].textContent = "Contact"
+topNav[0].textContent = siteContent["nav"]["nav-item-1"]
+topNav[1].textContent = siteContent["nav"]["nav-item-2"]
+topNav[2].textContent = siteContent["nav"]["nav-item-3"]
+topNav[3].textContent = siteContent["nav"]["nav-item-4"]
+topNav[4].textContent = siteContent["nav"]["nav-item-5"]
+topNav[5].textContent = siteContent["nav"]["nav-item-6"]
 
  let ctaText = document.querySelector('h1')
  ctaText.textContent = "DOM is Awesome"
@@ -63,7 +63,28 @@ topNav[5].textContent = "Contact"
  let ctaButton = document.querySelector('button')
  ctaButton.textContent = "Get Started"
 
- let mainHeaders = document.querySelector('top-content')
+ let mainHeaders = document.querySelectorAll('h4')
  console.log('main headers', mainHeaders)
  
- mainHeaders[0]
+ mainHeaders[0].textContent = siteContent["main-content"]['features-h4']
+ mainHeaders[1].textContent = siteContent["main-content"]['about-h4']
+ mainHeaders[2].textContent = siteContent["main-content"]['services-h4']
+ mainHeaders[3].textContent = siteContent["main-content"]['product-h4']
+ mainHeaders[4].textContent = siteContent["main-content"]['vision-h4']
+
+ let mainContent = document.querySelectorAll('p')
+ console.log('main content' , mainContent)
+
+ mainContent[0].textContent = siteContent["main-content"]['features-content']
+ mainContent[1].textContent = siteContent["main-content"]['about-content']
+ mainContent[2].textContent = siteContent["main-content"]['services-content']
+ mainContent[3].textContent = siteContent["main-content"]['product-content']
+ mainContent[4].textContent = siteContent["main-content"]['vision-content']
+
+
+
+
+
+
+
+ 
